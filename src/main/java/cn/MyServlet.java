@@ -22,6 +22,8 @@ public class MyServlet extends HttpServlet{
         log.debug("ni hao debug");
         System.out.println("aslkd;lkdfj");
         System.out.println("aslkd;lkdfj");
+        System.out.println("aslkd;lkdfj");
+        System.out.println("aslkd;lkdfj");
         System.out.println("hello");
     }
 }
