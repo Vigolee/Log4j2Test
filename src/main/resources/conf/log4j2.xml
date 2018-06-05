@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="1800">
+
+
+    <Appenders>
+
+        <File name="file" fileName="/Users/lwg/logs/test.log" append="false">
+            <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="file"/>
+
+        </Root>
+    </Loggers>
+</Configuration>
